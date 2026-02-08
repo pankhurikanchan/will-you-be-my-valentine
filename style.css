@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.center {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pink-bg {
+  background: linear-gradient(#ffb6c1, #ffe4e1);
+}
+
+.red-bg {
+  background: linear-gradient(#ff4d6d, #ff8fa3);
+}
+
+h1, h2 {
+  font-family: 'Pacifico', cursive;
+  color: #fff;
+}
+
+.buttons button {
+  padding: 15px 25px;
+  margin: 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 30px;
+}
+
+.yes {
+  background: #fff;
+  color: #ff4d6d;
+}
+
+.no {
+  background: #ff4d6d;
+  color: #fff;
+  position: absolute;
+}
+
+.gallery img {
+  width: 120px;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.next {
+  margin-top: 20px;
+  padding: 12px 20px;
+  border-radius: 25px;
+  border: none;
+}
+
+.butterfly-bg {
+  background: linear-gradient(#ffccd5, #ffe5ec);
+  overflow: hidden;
+}
+
+.message {
+  padding: 40px;
+  font-size: 18px;
+  color: #b0003a;
+}
+
+.butterfly {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: url('https://i.imgur.com/6X4Kq9B.png') no-repeat center/contain;
+  animation: fly 8s linear infinite;
+}
+
+.two {
+  animation-delay: 3s;
+}
+
+@keyframes fly {
+  from { left: -50px; top: 80%; }
+  to { left: 100%; top: 10%; }
+}
